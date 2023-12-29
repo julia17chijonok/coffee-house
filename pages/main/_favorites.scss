@@ -1,0 +1,120 @@
+.favorites-coffee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .favorites-coffee__title {
+        text-align: center;
+    }
+    .favorites-coffee__slider {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .favorites-coffee__carousel-wrapper {
+        width: 480px;
+        height: 640px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .favorites-coffee__carousel-inner {
+        display: flex;
+        transition: all 0.5s;
+        align-items:center;
+    }
+    .favorites-coffee__carousel-item {
+        width: 480px;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+    .favorites-coffee__carousel-item img {
+        height: 480px;
+    }  
+    .favorites-coffee__name {
+        font-size: 24px;
+        font-weight: 600;
+        color: rgba(64, 63, 61, 1);
+        margin-bottom: 16px;
+    }
+    .favorites-coffee__description {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 150%;
+        margin-bottom: 16px;
+    }   
+    .favorites-coffee__price {
+        font-size: 24px;
+        font-weight: 600;
+    }    
+    .favorites-coffee__controls {
+        display: flex;
+        gap: 12px;
+    }  
+    .favorites-coffee__control {
+        width: 40px;
+        height: 4px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(193, 182, 173, 1);
+    }
+    .favorites-coffee__control-fill.control-active {
+        width: 3px;
+        height: 4px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(102, 95, 85, 1);
+        transition:width  ease;
+        animation:progressbar 5s infinite
+    }
+    @keyframes progressbar {
+        from {
+            width:0
+        }
+        to {
+            width:100%
+        }
+    } 
+    .favorites-coffee__arrow {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        border: 1px solid rgba(102, 95, 85, 1);
+        transition: 0.5s;
+        cursor: pointer;
+    }    
+    .favorites-coffee__arrow svg{
+        stroke: rgba(64, 63, 61, 1);
+        transition: 0.5s;
+    }
+}
+
+
+
+.title-second{
+    font-size: 4.5em;
+    font-weight: 600;
+    color: rgba(64, 63, 61, 1);
+    line-height: 125%;
+}
+
+.title-second__italic {
+    font-style: italic;
+    color: rgba(176, 144, 122, 1);
+}
+
+
+
+
+

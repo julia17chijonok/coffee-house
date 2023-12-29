@@ -1,0 +1,19 @@
+@media (hover: hover) {
+    .header__nav ul {
+        a:hover:after, a:focus:after {
+            width: 100%;
+        }
+    }
+    .header_menu-btn {
+        span:hover:after, span:focus:after {
+            width: 100%;
+        }
+    }
+    .favorites-coffee__arrow:hover {
+        background-color: rgba(102, 95, 85, 1);
+    }
+    
+    .favorites-coffee__arrow:hover svg{
+        stroke: rgba(225, 212, 201, 1);
+    }
+}
