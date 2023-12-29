@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background: var(--background-body, #E1D4C9);
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 20px 40px 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+@import 'header';
+@import 'enjoy';
+@import 'favorites';
+@import 'about';
+@import 'mobile';
+@import 'footer';
+@import 'media';

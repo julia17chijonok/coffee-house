@@ -1,0 +1,106 @@
+footer {
+    width: 100%;
+    display: flex;  
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+    gap: 100px;
+    border-radius: 40px;
+    background: #665F55;
+    margin-bottom: 40px;
+
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        .footer__title{
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 125%;
+            color: #E1D4C9;
+        }
+        
+        .footer__title-italic {
+            font-style: italic;
+            color: #B0907A;
+        }
+        
+        .footer__social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .footer__social-link {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #C1B6AD;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        
+        .footer__social-link svg {
+            stroke: #C1B6AD;
+            fill: none;
+            transition: 0.8s;
+        }
+    }
+    
+    .footer__contacts {
+        width: 530px;
+        height: 186px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .footer__contacts-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 125%;
+        color: #E1D4C9;
+    }
+    
+    .footer__contacts-block svg {
+        stroke: #E1D4C9;
+    }
+    
+    .footer__contacts-block {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    
+    .footer__contact{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #E1D4C9;
+        font-size: 16px;
+    }
+    
+    .footer__contacts-block span {
+        position: relative;
+    }
+    
+    .footer__contacts-block span:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #E1D4C9;
+        content: "";
+        transition: width 0.4s ease-out;
+    }
+}
+
