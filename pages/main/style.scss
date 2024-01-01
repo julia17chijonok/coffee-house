@@ -38,8 +38,24 @@ ul {
     overflow-x: hidden;
 }
 
+main {
+    max-width: 100%;
+}
+
 section {
     margin-bottom: 100px;
+}
+
+.title-second{
+    font-size: 4em;
+    font-weight: 600;
+    color: rgba(64, 63, 61, 1);
+    line-height: 125%;
+}
+
+.title-second__italic {
+    font-style: italic;
+    color: rgba(176, 144, 122, 1);
 }
 
 @import 'header';

@@ -3,79 +3,59 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // flex-wrap: wrap;
     gap: 100px;
-}
-
-// .mobile-app__inner {
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     gap: 100px;
-// }
-
-.mobile-app__content{
-    width: 100%;
-    height: 100%;
-    // max-width: 360px;
-    /* height: 342px; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.mobile-app__content h2 {
-    font-size: 60px;
-    line-height: 125%;
-}
-
-.mobile-app__content p {
-    line-height: 150%;
-}
-
-.mobile-app__download-btns {
-    display: flex;
-    gap: 20px;
-}
-
-.mobile-app__download-btn{
-    display: flex;
-    width: 200px;
-    height: 60px;
-    padding: 12px 20px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 100px;
-    border: 1px solid #665F55;
-    background-color: rgba(225, 212, 201, 1);
-    transition: 0.8s;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.mobile-app__download-btn svg{
-   fill: #403F3D;
-   transition: 0.8s;
-}
-
-.mobile-app__avaible {
-    font-size: 10px;
-}
-
-.mobile-app__store-name {
-    font-size: 16px;
-}
-
-.mobile-app__image {
-    flex: 1 1 auto;
-    min-width: 0px;
-    min-height: 0px;
-    width: 100%;
-    height: 100%;
-    max-width: 630px;
-    max-height: 630px;
-    // object-fit: contain;
+    .mobile-app__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        .mobile-app__content h2 {
+            font-size: 60px;
+            line-height: 125%;
+        }
+        
+        .mobile-app__content p {
+            line-height: 150%;
+        }
+        
+        .mobile-app__download-btns {
+            display: flex;
+            gap: 20px;
+            .mobile-app__download-btn{
+                display: flex;
+                width: 200px;
+                height: 60px;
+                padding: 12px 20px;
+                align-items: center;
+                gap: 8px;
+                border-radius: 100px;
+                border: 1px solid #665F55;
+                background-color: rgba(225, 212, 201, 1);
+                transition: 0.8s;
+                cursor: pointer;
+                font-weight: 600;
+                & svg{
+                    fill: #403F3D;
+                    transition: 0.8s;
+                }
+            }
+            .mobile-app__avaible {
+                font-size: 10px;
+            }
+            
+            .mobile-app__store-name {
+                font-size: 16px;
+            }
+        }
+    }
+    .mobile-app__image-wrapper {
+        max-width: 100%;
+    }
+    
+    .mobile-app__image {
+        max-width: 100%;
+        object-fit: contain;
+    }
 }

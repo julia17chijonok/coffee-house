@@ -1,94 +1,39 @@
 .about {
-    width: 100%;
-}
-
-.about__inner {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 40px; 
+    .about__photos-container {
+        display: flex;
+        width: 100%;
+        gap: 40px;
+        .about__photos-column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .about__img-small {
+            height: 430px;
+        }
+        
+        .about__img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 688px;
+            min-width: 348px;
+            background-color: #c0c0c0;
+            border-radius: 20px;
+            overflow: hidden;
+            .about__img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                scale: 110%;
+                transition: all 0.3s ease;
+            }
+        }
+    }
 }
-
-.about__photos {
-    display: flex;
-    width: 100%;
-    gap: 40px;
-}
-
-.about__photos-column {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.photo-wrapper{
-    height:  590px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.photo-wrapper-small {
-    height: 430px;
-}
-
-.photo__img {
-    height:  590px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 20px;
-    // transform: scale(100%);
-    // transition: all 0.8s;
-}
-
-.about__img-small {
-    height: 430px;
-}
-
-// .about__photos {
-//     display: flex;
-//     gap: 40px;
-// }
-
-// .about__img {
-//     border-radius: 20px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     transition: 0.3s;
-// }
-
-// .about__photos-1 {
-//     height:  41.2rem; 
-//     /* width: 660px;
-//     height: 590px; */
-//     background-image: url(../../assets/images/about-1.png);
-// }
-
-// .about__photos-2 {
-//     height: 30rem;
-//     /* width: 660px;
-//     height: 425px; */
-//     background-image: url(../../assets/images/about-2.png);
-// }
-
-// .about__photos-3 {
-//     height: 30rem;
-//     /* width: 660px;
-//     height: 425px; */
-//     background-image: url(../../assets/images/about-3.png);
-// }
-
-// .about__photos-4 {
-//     height: 41.2rem;
-//     /* width: 660px;
-//     height: 590px; */
-//     background-image: url(../../assets/images/about-4.png);
-// }
-
-// .about__photos-column {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 40px;
-// }
