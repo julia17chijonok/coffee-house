@@ -30,12 +30,16 @@
         }
     }
 
-    .mobile-app__download-btn:hover{
-        background-color: #665F55;
-        color: #E1D4C9;
-        &:hover svg{
-            fill: #E1D4C9;
-        }
+    .mobile-app {
+        .mobile-app__content {
+            .mobile-app__download-btn:hover{
+                background-color: #665F55;
+                color: #E1D4C9;
+                &:hover svg{
+                    fill: #E1D4C9;
+                }
+            }
+        }   
     }
 
     .footer {
