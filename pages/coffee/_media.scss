@@ -1,0 +1,101 @@
+@media (hover: hover) {
+    .header__nav ul {
+        a:hover:after, a:focus:after {
+            width: 100%;
+        }
+    }
+
+    .offer__tab-item:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
+    }
+
+    .menu-coffee__refresh:hover {
+        background-color: rgba(102, 95, 85, 1);
+    }
+
+    .footer {
+        .footer__contacts-block span:hover:after, span:focus:after {
+            width: 100%;
+        }    
+        .footer__social-link:hover {
+            background-color: #E1D4C9;
+            &:hover svg {
+                stroke: #403F3D;
+            }
+        }
+    }  
+}
+
+
+@media (max-width: 1024px) {
+    footer {
+        flex-direction: column;
+    }   
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 16px;
+    }
+    .title-second {
+        font-size: 32px;
+    }
+    .header {
+        position: relative;
+        &__burger-btn {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(102, 95, 85, 1);
+            border-radius: 100%;
+            cursor: pointer;
+            & span {
+                height: 0px;
+                width: 16px;
+                background-color: rgba(64, 63, 61, 1);
+                border: 1px solid rgba(64, 63, 61, 1);
+                border-radius:10%;
+                transition: all 200ms;
+            }
+        }
+    
+        .header__burger-btn.active{
+            gap: 0px;
+        }
+    
+        .header__burger-btn.active span {
+            margin-bottom: -1px;
+        }
+    
+        .header__burger-btn.active span:nth-child(1) {
+            transform: rotate(-45deg);
+        }
+    
+        .header__burger-btn.active span:nth-child(2){
+            transform: rotate(45deg);
+        }
+    
+        .header__menu-btn {
+            display: none;
+        }
+    
+        &__nav {
+            display: none;
+        }
+    }
+    .footer {
+        padding: 60px 16px;
+        align-items: flex-start;
+        &__social {
+            .footer__title {
+                font-size: 32px;
+            }
+        }     
+    }
+}
