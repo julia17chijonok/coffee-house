@@ -7,11 +7,16 @@
 
     .offer__tab-item:hover {
         background-color: #665F55;
-        color: #E1D4C9;
+        span {
+            color: #E1D4C9;
+        }   
     }
 
     .menu-coffee__refresh:hover {
         background-color: rgba(102, 95, 85, 1);
+        .menu-coffee__refresh:hover svg {
+            stroke: #E1D4C9;
+        }
     }
 
     .footer {
