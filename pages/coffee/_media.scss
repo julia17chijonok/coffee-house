@@ -4,42 +4,14 @@
             width: 100%;
         }
     }
-    .header__menu-btn {
-        span:hover:after, span:focus:after {
-            width: 100%;
-        }
-    }
-    .enjoy-btn {
-        &:hover {
-            gap: 8px;
-            &:hover .enjoy__cup{
-                opacity: 1;
-            }
-        }
-    }
-    .favorites-coffee__arrow:hover {
-        background-color: rgba(102, 95, 85, 1);
-        & svg{
-            stroke: rgba(225, 212, 201, 1);
-        }
-    }
-    
-    .about {
-        &__img-wrapper:hover .about__img {
-            scale: 115%;
-        }
+
+    .offer__tab-item:hover {
+        background-color: #665F55;
+        color: #E1D4C9;
     }
 
-    .mobile-app {
-        .mobile-app__content {
-            .mobile-app__download-btn:hover{
-                background-color: #665F55;
-                color: #E1D4C9;
-                &:hover svg{
-                    fill: #E1D4C9;
-                }
-            }
-        }   
+    .menu-coffee__refresh:hover {
+        background-color: rgba(102, 95, 85, 1);
     }
 
     .footer {
@@ -57,24 +29,11 @@
 
 
 @media (max-width: 1024px) {
-    .about .about__photos-container {
-        flex-direction: column;
-        align-items: center;
-        .about__img-hide {
-            display: none;
-        }
-    }
-    
-    .mobile-app {
-        flex-direction: column;
-        .mobile-app__content {
-            max-width: 688px;
-        }
-    }
     footer {
         flex-direction: column;
     }   
 }
+
 
 @media (max-width: 768px) {
     .container {
@@ -129,25 +88,6 @@
         &__nav {
             display: none;
         }
-    }
-    .enjoy-section {
-        padding: 60px 16px;
-        .enjoy-section__title {
-            font-size: 42px;
-        }
-    }
-    .favorites-coffee {
-        &__slider {
-            justify-content: center;
-            .favorites-coffee__arrow {
-                display: none;
-            }
-        }
-    }
-    .mobile-app__download-btns {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
     }
     .footer {
         padding: 60px 16px;
