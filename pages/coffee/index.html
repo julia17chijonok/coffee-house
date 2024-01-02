@@ -92,11 +92,81 @@
 
         <div class="menu-coffee">
             <div class="menu-coffee__wrapper"></div> 
-            <div class="menu-coffee__refresh">
+            <div class="menu-coffee__refresh invisible">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
+            </div>
+        </div>
+
+        <div class="modal-window__bg">
+            <div class="modal-window__inner">
+                <img class="modal-window__img" src="../../assets/images/coffee-1.png" alt="coffee">
+                <div class="modal-window__content">
+                    <span class="modal-window__name"></span>
+                    <div class="modal-window__wrapper">
+                        <p class="modal-window__descr"></p>
+                        <div class="modal-window__sizes modal-window__tabs-wrapper">
+                            <span>Size</span>
+                            <div class="modal-window__sizes-btn-wrapper ">
+                                <div class="modal-window__sizes-btn modal-window_tab active" price="0">
+                                    <div class="modal-window__sizes-btn-circle modal-window__circle">S</div>
+                                    <span class="modal-window__text modal-window__size">200 ml</span>
+                                </div>
+                                <div class="modal-window__sizes-btn modal-window_tab" price="0.5">
+                                    <div class="modal-window__sizes-btn-circle modal-window__circle">M</div>
+                                    <span class="modal-window__text modal-window__size">300 ml</span>
+                                </div>
+                                <div class="modal-window__sizes-btn modal-window_tab" price="1">
+                                    <div class="modal-window__sizes-btn-circle modal-window__circle">L</div>
+                                    <span class="modal-window__text modal-window__size">400 ml</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-coffee__modal-window-additives modal-window_tabs-wrapper">
+                            <span>Additives</span>
+                            <div class="modal-window__add-btn-wrapper">
+                                <div class="modal-window__add-btn modal-window_tab">
+                                    <div class="modal-window__add-btn-circle modal-window__circle">1</div>
+                                    <span class="modal-window__text modal-window-addictive">Sugar</span>
+                                </div>
+                                <div class="modal-window__add-btn modal-window_tab">
+                                    <div class="modal-window__add-btn-circle modal-window__circle">2</div>
+                                    <span class="modal-window__text modal-window-addictive">Cinnamon</span>
+                                </div>
+                                <div class="modal-window__add-btn modal-window_tab">
+                                    <div class="modal-window__add-btn-circle modal-window__circle">3</div>
+                                    <span class="modal-window__text modal-window-addictive">Syrup</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-window__price-block">
+                            <span class="modal-window__total">Total:</span>
+                            <span class="modal-window__price"></span>
+                        </div>
+                        <div class="modal-window__info-block">
+                            <div class="modal-window__info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_311_4007)">
+                                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8.00004C14.6667 4.31814 11.6819 1.33337 8 1.33337C4.3181 1.33337 1.33333 4.31814 1.33333 8.00004C1.33333 11.6819 4.3181 14.6667 8 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_311_4007">
+                                    <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <p class="modal-window__info-text">The cost is not final. Download our mobile app 
+                                to see the final price and place your order. Earn loyalty points and enjoy your favorite 
+                                coffee with up to 20% discount.</p>
+                        </div>
+                        <button class="modal-window__close">Close</button>
+                    </div> 
+                </div>
             </div>
         </div>
 
