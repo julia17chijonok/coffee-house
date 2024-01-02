@@ -1,0 +1,123 @@
+.modal-window__bg{
+    display: none;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 20px;
+    &.active{
+        display: flex;
+    }
+    .modal-window__inner {
+        background-color: #E1D4C9;
+        opacity: 1;
+        max-width: 688px;
+        display: flex;
+        border-radius: 40px;
+        padding: 16px;
+        gap: 20px;
+        .modal-window__img {
+            height: 300px;
+            border-radius: 40px;
+        }
+        
+        .modal-window__name {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: rgba(64, 63, 61, 1);
+        }
+        
+        .modal-window__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .modal-window__descr {
+                color: rgba(64, 63, 61, 1);
+            }
+            .modal-window__tabs-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .modal-window__sizes-btn-wrapper{
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            
+            .modal-window_tab {
+                display: flex;
+                min-width: 117px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 16px 8px 8px;
+                border-radius: 100px;
+                border: 1px solid #C1B6AD;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            
+            .modal-window__sizes-btn.active {
+                background-color: #665F55;
+                border: none;
+                .modal-window__text {
+                    color: #E1D4C9;
+                } 
+            }
+            
+            .modal-window__add-btn.active {
+                background-color: #665F55;
+                border: none;
+                .modal-window__text {
+                    color: #E1D4C9;
+                }
+            }
+            
+            .modal-window__circle {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: #C1B6AD;
+                color: rgba(64, 63, 61, 1);
+                justify-content: center;
+                align-items:center;
+            }
+            
+            .modal-window__add-btn-wrapper {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            
+            .modal-window__price-block {
+                display: flex;
+                justify-content: space-between;
+                color: rgba(64, 63, 61, 1);
+            }
+            
+            .modal-window__info-block {
+                display: flex;
+                gap: 8px;
+            }
+            
+            .modal-window__info-text {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.modal-window__close {
+    padding: 10px 0px;
+    border-radius: 100px;
+    background:none;
+    border: 1px solid #665F55;
+    cursor: pointer;
+    transition: all 0.3s;
+}

@@ -18,6 +18,14 @@
             stroke: #E1D4C9;
         }
     }
+    .modal-window__inner {
+        .modal-window__wrapper {
+            .modal-window__close:hover {
+                background-color: #665F55;
+                color: rgba(225, 212, 201, 1);
+            }
+        }    
+    }
 
     .footer {
         .footer__contacts-block span:hover:after, span:focus:after {
@@ -94,6 +102,11 @@
             display: none;
         }
     }
+
+    .modal-window__img {
+        display: none;
+    }
+
     .footer {
         padding: 60px 16px;
         align-items: flex-start;
